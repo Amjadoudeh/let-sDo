@@ -12,7 +12,7 @@ struct ListView: View {
         }
         .listStyle(PlainListStyle())
         .navigationTitle("To Do List 📝")
-        .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination: AddView()))
+        .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination: AddToView()))
     }
 }
 
