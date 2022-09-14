@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ListRowView: View {
     let title: String
+    
     var body: some View {
         HStack {
             Image(systemName: "checkmark.circle")
@@ -14,6 +15,6 @@ struct ListRowView: View {
 
 struct ListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ListRowView(title: "")
+        ListRowView(title: "Just an item")
     }
 }

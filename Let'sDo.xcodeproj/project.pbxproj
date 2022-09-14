@@ -12,6 +12,9 @@
 		D0FEB86F28D1C912008114CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FEB86E28D1C912008114CA /* Preview Assets.xcassets */; };
 		D0FEB87928D1CADD008114CA /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEB87828D1CADD008114CA /* ListView.swift */; };
 		D0FEB87B28D1CFD7008114CA /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEB87A28D1CFD7008114CA /* ListRowView.swift */; };
+		D0FEB87D28D1D583008114CA /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEB87C28D1D583008114CA /* AddView.swift */; };
+		D0FEB87F28D1D9B1008114CA /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEB87E28D1D9B1008114CA /* TextFieldView.swift */; };
+		D0FEB88128D1D9E0008114CA /* SaveButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEB88028D1D9E0008114CA /* SaveButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		D0FEB86E28D1C912008114CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D0FEB87828D1CADD008114CA /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		D0FEB87A28D1CFD7008114CA /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		D0FEB87C28D1D583008114CA /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		D0FEB87E28D1D9B1008114CA /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		D0FEB88028D1D9E0008114CA /* SaveButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,9 @@
 			children = (
 				D0FEB87828D1CADD008114CA /* ListView.swift */,
 				D0FEB87A28D1CFD7008114CA /* ListRowView.swift */,
+				D0FEB87C28D1D583008114CA /* AddView.swift */,
+				D0FEB87E28D1D9B1008114CA /* TextFieldView.swift */,
+				D0FEB88028D1D9E0008114CA /* SaveButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FEB87D28D1D583008114CA /* AddView.swift in Sources */,
+				D0FEB88128D1D9E0008114CA /* SaveButtonView.swift in Sources */,
+				D0FEB87F28D1D9B1008114CA /* TextFieldView.swift in Sources */,
 				D0FEB86828D1C911008114CA /* Let_sDoApp.swift in Sources */,
 				D0FEB87928D1CADD008114CA /* ListView.swift in Sources */,
 				D0FEB87B28D1CFD7008114CA /* ListRowView.swift in Sources */,
