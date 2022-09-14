@@ -44,7 +44,7 @@ extension AddToView {
                 .font(.headline)
                 .frame(height: 60)
                 .frame(maxWidth:.infinity)
-                .foregroundColor(.white)
+                .foregroundColor(Color(uiColor: .secondarySystemBackground))
                 .background(Color.accentColor)
                 .cornerRadius(10)
         }
