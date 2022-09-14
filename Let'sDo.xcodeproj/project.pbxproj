@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		D0FEB86828D1C911008114CA /* Let_sDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEB86728D1C911008114CA /* Let_sDoApp.swift */; };
-		D0FEB86A28D1C911008114CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEB86928D1C911008114CA /* ContentView.swift */; };
 		D0FEB86C28D1C912008114CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FEB86B28D1C912008114CA /* Assets.xcassets */; };
 		D0FEB86F28D1C912008114CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FEB86E28D1C912008114CA /* Preview Assets.xcassets */; };
+		D0FEB87928D1CADD008114CA /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEB87828D1CADD008114CA /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D0FEB86428D1C911008114CA /* Let'sDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let'sDo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FEB86728D1C911008114CA /* Let_sDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Let_sDoApp.swift; sourceTree = "<group>"; };
-		D0FEB86928D1C911008114CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0FEB86B28D1C912008114CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0FEB86E28D1C912008114CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0FEB87828D1CADD008114CA /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				D0FEB86728D1C911008114CA /* Let_sDoApp.swift */,
-				D0FEB86928D1C911008114CA /* ContentView.swift */,
+				D0FEB87528D1CA64008114CA /* View */,
+				D0FEB87628D1CA70008114CA /* ViewModel */,
+				D0FEB87728D1CAAF008114CA /* Model */,
 				D0FEB86B28D1C912008114CA /* Assets.xcassets */,
 				D0FEB86D28D1C912008114CA /* Preview Content */,
 			);
@@ -65,6 +67,28 @@
 				D0FEB86E28D1C912008114CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0FEB87528D1CA64008114CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0FEB87828D1CADD008114CA /* ListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0FEB87628D1CA70008114CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D0FEB87728D1CAAF008114CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0FEB86A28D1C911008114CA /* ContentView.swift in Sources */,
 				D0FEB86828D1C911008114CA /* Let_sDoApp.swift in Sources */,
+				D0FEB87928D1CADD008114CA /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
