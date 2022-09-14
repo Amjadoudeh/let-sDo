@@ -1,19 +1,15 @@
-//
-//  Let_sDoApp.swift
-//  Let'sDo
-//
-//  Created by Amjad Oudeh on 14.09.22.
-//
-
 import SwiftUI
 
 @main
 struct Let_sDoApp: App {
+    @StateObject var listViewModel: ListViewModel = ListViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 ListView()
             }
+            .environmentObject(listViewModel)
         }
     }
 }
