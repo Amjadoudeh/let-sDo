@@ -6,7 +6,7 @@ struct AddToView: View {
     @State var textFiledtext: String = ""
     @State var alertTitle = ""
     @State var showAlert = false
-    
+
     var body: some View {
         ScrollView {
             VStack {
@@ -37,26 +37,26 @@ extension AddToView {
             .background(.gray.opacity(0.1))
             .cornerRadius(10)
     }
-    
+
     var saveButton: some View {
         Button(action: saveButtonPressed) {
             Text("save".uppercased())
                 .font(.headline)
                 .frame(height: 60)
-                .frame(maxWidth:.infinity)
+                .frame(maxWidth: .infinity)
                 .foregroundColor(Color(uiColor: .secondarySystemBackground))
                 .background(Color.accentColor)
                 .cornerRadius(10)
         }
     }
-    
+
     func saveButtonPressed() {
         if textIsAppropriate() {
             listViewModel.addItem(title: textFiledtext)
             presentationMode.wrappedValue.dismiss()
         }
     }
-    
+
     func textIsAppropriate() -> Bool {
         if textFiledtext.count < 3 {
             alertTitle = "Your new todo item must be at least 3 characters long!!  😱 🔐"
@@ -65,7 +65,7 @@ extension AddToView {
         }
         return true
     }
-    
+
     func getAlert() -> Alert {
         return Alert(title: Text(alertTitle))
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0B82B4428DCC13700AAD7E9 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B82B4328DCC13700AAD7E9 /* AnimationView.swift */; };
 		D0FEB86828D1C911008114CA /* Let_sDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEB86728D1C911008114CA /* Let_sDoApp.swift */; };
 		D0FEB86C28D1C912008114CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FEB86B28D1C912008114CA /* Assets.xcassets */; };
 		D0FEB86F28D1C912008114CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FEB86E28D1C912008114CA /* Preview Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0B82B4328DCC13700AAD7E9 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		D0FEB86428D1C911008114CA /* Let'sDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let'sDo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FEB86728D1C911008114CA /* Let_sDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Let_sDoApp.swift; sourceTree = "<group>"; };
 		D0FEB86B28D1C912008114CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				D0FEB87E28D1D9B1008114CA /* AddToView.swift */,
 				D0FEB88628D2586D008114CA /* NoItemsView.swift */,
 				D0FEB88828D277B2008114CA /* LaunchScreen.storyboard */,
+				D0B82B4328DCC13700AAD7E9 /* AnimationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0FEB87F28D1D9B1008114CA /* AddToView.swift in Sources */,
+				D0B82B4428DCC13700AAD7E9 /* AnimationView.swift in Sources */,
 				D0FEB86828D1C911008114CA /* Let_sDoApp.swift in Sources */,
 				D0FEB87928D1CADD008114CA /* ListView.swift in Sources */,
 				D0FEB88328D1DAFE008114CA /* ItemModel.swift in Sources */,

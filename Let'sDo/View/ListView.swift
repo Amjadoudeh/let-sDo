@@ -3,12 +3,12 @@ import SwiftUI
 struct ListView: View {
     @EnvironmentObject var listViewModel: ListViewModel
     var body: some View {
-        ZStack{
+        ZStack {
             if listViewModel.items.isEmpty {
                 withAnimation(.easeInOut) {
                     NoItemsView()
                 }
-                
+
             } else {
                 List {
                     ForEach(listViewModel.items) { item in
@@ -38,4 +38,3 @@ struct ListView_Previews: PreviewProvider {
         }
     }
 }
-

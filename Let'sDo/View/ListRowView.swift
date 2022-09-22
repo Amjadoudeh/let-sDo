@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ListRowView: View {
     let item: ItemModel
-    
+
     var body: some View {
         HStack {
             Image(systemName: item.isCompleted ? "checkmark.circle" : "circle")
@@ -14,7 +14,6 @@ struct ListRowView: View {
         .padding(.vertical, 8)
     }
 }
-
 
 struct ListRowView_Previews: PreviewProvider {
     static var previews: some View {

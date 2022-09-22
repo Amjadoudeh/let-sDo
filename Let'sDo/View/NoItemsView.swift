@@ -1,16 +1,9 @@
-//
-//  NonItemsView.swift
-//  Let'sDo
-//
-//  Created by Amjad Oudeh on 14.09.22.
-//
-
 import SwiftUI
 
 struct NoItemsView: View {
     @State var animate = false
     let secoundaryAccentColor = Color("SecoundaryAccentColor")
-    
+
     var body: some View {
         ScrollView {
             VStack {
@@ -38,16 +31,21 @@ struct NoItemsView: View {
                 .shadow(color: animate ? secoundaryAccentColor.opacity(0.7) : Color.accentColor.opacity(0.7),
                         radius: animate ? 40 : 20,
                         y: animate ? 20 : 10)
-                
+
             }
             .frame(maxWidth: 400)
             .padding(40)
             .onAppear(perform: addAnimation)
+            Spacer()
+            Spacer()
+            // add animatoion here 
+            AnimationView()
+
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        
+
     }
-    
+
     func addAnimation() {
         guard !animate else { return }
         DispatchQueue.main.asyncAfter(deadline: .now() + 1 ) {
