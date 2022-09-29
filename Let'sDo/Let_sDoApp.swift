@@ -7,7 +7,13 @@ struct Let_sDoApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ListView()
+                if listViewModel.items.isEmpty {
+                    withAnimation(.easeInOut) {
+                        NoItemsView()
+                    }
+                } else {
+                    ListView()
+                }
             }
             .navigationViewStyle(StackNavigationViewStyle())
             .environmentObject(listViewModel)

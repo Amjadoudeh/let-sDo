@@ -31,7 +31,6 @@ struct AddView_Previews: PreviewProvider {
 extension AddToView {
     var textFieldArea: some View {
         TextField("Start typing here", text: $textFiledtext)
-            .fontWeight(.medium)
             .padding(.horizontal)
             .frame(height: 60)
             .background(.gray.opacity(0.1))

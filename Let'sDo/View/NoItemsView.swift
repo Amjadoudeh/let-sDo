@@ -5,8 +5,13 @@ struct NoItemsView: View {
     let secoundaryAccentColor = Color("SecoundaryAccentColor")
 
     var body: some View {
-        ScrollView {
+        VStack {
             VStack {
+                Text("Let's Do it")
+                    .font(.largeTitle.bold())
+                    .padding(.bottom)
+                
+                Spacer()
                 Text("There is no items yet!")
                     .font(.title2)
                     .fontWeight(.semibold)
@@ -14,6 +19,7 @@ struct NoItemsView: View {
                 Text("Get more orgnise and click the button below to start adding new things to do..")
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 20)
+                Spacer()
                 NavigationLink(
                     destination: AddToView(),
                     label: {
@@ -33,11 +39,10 @@ struct NoItemsView: View {
                         y: animate ? 20 : 10)
 
             }
-            .frame(maxWidth: 400)
+            .frame(maxWidth: 600)
             .padding(40)
             .onAppear(perform: addAnimation)
-            Spacer()
-            Spacer()
+
             // add animatoion here 
             AnimationView()
 

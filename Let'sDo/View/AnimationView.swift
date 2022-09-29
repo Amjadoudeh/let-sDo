@@ -22,8 +22,8 @@ struct AnimationView: View {
                         ForEach(0..<18) { item in
                             Text("\(emojes[item])")
                                 .font(.system(size: 30))
-                                .position(x: .random(in: 0...proxy.size.width / 1.2),
-                                          y: .random(in: 0...proxy.size.height / 1.2)
+                                .position(x: .random(in: 0...proxy.size.width / 1),
+                                          y: .random(in: 0...proxy.size.height / 3)
                                 )
                                 .animation(animation, value: isAnimating)
 
